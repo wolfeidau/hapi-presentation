@@ -1,0 +1,7 @@
+{
+  "name": "bespoke-hapi-presentation",
+  "version": "0.1.0",
+  "dependencies": {
+    "bespoke.js": "~0.1.0"
+  }
+}
