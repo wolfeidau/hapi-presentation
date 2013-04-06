@@ -4,12 +4,12 @@ var Hapi = require('hapi')
 var options = {
   views: {
     path: __dirname + '/views',
-    cache: false, // disabled during development
+    cache: true, // disabled during development
     engines: {
       'jade': {module: 'jade', extension: 'jade'}
     },
     compileOptions: {
-      pretty: true
+      pretty: false
     }
   }
 };

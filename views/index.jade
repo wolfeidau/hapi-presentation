@@ -1,3 +1,79 @@
 extends layout
 
 block content
+    #main
+        article
+            section
+                img#logo(src='img/hapi.png')
+                p#by By Walmart Labs
+            section
+                h1 What is hapi?
+                ul
+                    li Built on top of Node.JS
+                    li Developed by a team at Walmart Labs
+                    li Out of the box it includes:
+                    ul
+                        li Authentication
+                        li Validation
+                        li Caching
+                        li Batching
+                        li And more..
+            section
+                h1 Validation
+                img.module(src='img/joi.png')
+                ul
+                    li Stand alone validation library
+                    li Used as a general purpose crap filter
+                    li API enables definition reusable validations (schemas)
+            section
+                h1 Caching
+                img.module(src='img/catbox.png')
+                ul
+                    li Caching and Prefetch
+                    li Rule based
+                    li Provides various engines
+                    ul
+                        li Memory (Experimental)
+                        li Redis
+                        li MongoDB
+            section
+                h1 Monitoring
+                img.module(src='img/good.png')
+                ul
+                    li Request Logging
+                    li System and process performance
+                    li General events
+                    li Can be written to:
+                    ul
+                        li Console
+                        li File
+                        li HTTP
+            section
+                h1 Testing
+                img.module(src='img/shot.png')
+                ul
+                    li Request injection
+                    li Does not use a socket connection
+                    li mocha
+                    li sinon.js
+                    li chai
+            section
+                h1 Batching
+                img.module(src='img/bassmaster.png')
+                ul
+                    li Invoke a batch of operations
+                    li Designed for use within mobile applications
+                    li Mobile networks SUCK
+                    ul
+                        li Tunnels
+                        li Time Slicing
+                    li Similar boost to combining assets
+            section
+                h1 Observations
+                ul
+                    li New framework
+                    li Modular reusable components
+                    li API is still a moving target
+                    li Open to push requests
+            section
+                h1 Questions
