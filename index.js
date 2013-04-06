@@ -1,11 +1,38 @@
 var Hapi = require('hapi')
-  , presentations = require('./lib')
-  , config = require('config.json');
+  , presentations = require('./lib');
 
-var http = new Hapi.Server('localhost', 8000, config);
+var options = {
+  views: {
+    path: __dirname + '/views',
+    cache: false, // disabled during development
+    engines: {
+      'jade': {module: 'jade', extension: 'jade'}
+    },
+    compileOptions: {
+      pretty: true
+    }
+  }
+};
+
+// create the server
+var server = new Hapi.Server('localhost', 10000, options);
 
 // register routes
-presentations.registerRoutes(http, config);
+presentations.registerRoutes(server, options);
 
-// Start server
-http.start();
+var goodOptions = {
+  subscribers: {
+    console: ['ops', 'request', 'log']
+  }
+};
+
+server.plugin.require('good', goodOptions, function (err) {
+
+  if (!err) {
+    // Plugin loaded successfully
+  }
+});
+
+server.start(function () {
+  console.log('server started on port: ', server.settings.port);
+});
