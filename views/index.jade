@@ -5,7 +5,7 @@ block content
         article
             section
                 img#logo(src='img/hapi.png')
-                p#by By Walmart Labs
+                p#by By Mark Wolfe
             section
                 h1 What is hapi?
                 ul
@@ -18,6 +18,20 @@ block content
                         li Caching
                         li Batching
                         li And more..
+            section
+                h1 Auth
+                img.hawk(src='img/hawk.png')
+                ul
+                    li Out of the box supports:
+                    ul
+                        li Basic
+                        li Cookie
+                    li Also includes Hawk
+                    ul
+                        li MAC based authetication (oz)
+                    li passport.js plugin in the works.
+                    ul
+                        li OAuth for GitHub, Twitter..
             section
                 h1 Validation
                 img.module(src='img/joi.png')
@@ -68,6 +82,14 @@ block content
                         li Tunnels
                         li Time Slicing
                     li Similar boost to combining assets
+            section
+                h1 Notable Features
+                ul
+                    li Request Tails
+                    ul
+                        li Executed after response completion
+                        li Async
+                        li Good for idempotent operations
             section
                 h1 Observations
                 ul
