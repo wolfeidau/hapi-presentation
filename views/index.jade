@@ -4,6 +4,7 @@ block content
     #main
         article
             section
+                p#heading Building Services with
                 img#logo(src='img/hapi.png')
                 p#by By Mark Wolfe
             section
@@ -37,15 +38,19 @@ block content
                 img.module(src='img/joi.png')
                 ul
                     li Stand alone validation library
-                    li Used as a general purpose crap filter
-                    li API enables definition reusable validations (schemas)
+                    li Validates JSON Data
+                    ul
+                        li Type checking Strings, Numbers, Array
+                        li Required/Optional
+                        li Validate against a list of values
+                    li API enables grouping of validations into schemas
             section
                 h1 Caching
                 img.module(src='img/catbox.png')
                 ul
-                    li Caching and Prefetch
+                    li Caching and Prefetch hooks
                     li Rule based
-                    li Provides various engines
+                    li Provides engines for:
                     ul
                         li Memory (Experimental)
                         li Redis
@@ -67,10 +72,12 @@ block content
                 img.module(src='img/shot.png')
                 ul
                     li Request injection
-                    li Does not use a socket connection
-                    li mocha
-                    li sinon.js
-                    li chai
+                    li Doesn't require socket connection
+                    li Libraries I use to test:
+                    ul
+                        li mocha
+                        li sinon.js
+                        li chai
             section
                 h1 Batching
                 img.module(src='img/bassmaster.png')
@@ -80,15 +87,15 @@ block content
                     li Mobile networks SUCK
                     ul
                         li Tunnels
-                        li Time Slicing
+                        li Trains
                     li Similar boost to combining assets
             section
-                h1 Notable Features
+                h1 Interesting Features
                 ul
                     li Request Tails
                     ul
                         li Executed after response completion
-                        li Async
+                        li Asyncronis
                         li Good for idempotent operations
             section
                 h1 Observations
@@ -97,5 +104,6 @@ block content
                     li Modular reusable components
                     li API is still a moving target
                     li Open to push requests
+                    li Prepare to read the code.
             section
                 h1 Questions

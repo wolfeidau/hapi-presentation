@@ -88,7 +88,9 @@ ul ul {
 
 img#logo {
     margin-left: 65px;
-    margin-top: 60px;
+    width: 250px;
+    height: auto;
+
 }
 
 img.module {
@@ -108,9 +110,17 @@ img.hawk {
     height: 150px;
 }
 
+p#heading {
+    color: white;
+    font-family: Gill Sans, Segoe UI Light, Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-size: 32px;
+}
+
 p#by {
     text-align: right;
     padding-right: 100px;
+    font-size: 32px;
 }
 
 .classic {
